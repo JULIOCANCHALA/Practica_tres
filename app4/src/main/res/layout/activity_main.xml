@@ -1,0 +1,330 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/whitesmoke"
+
+    >
+
+    <TextView
+        android:text="@string/app"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:textColor="#252525"
+        android:textStyle="bold"
+
+        />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="6dp"
+        android:background="#c62339ff"
+        >
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal"
+
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+
+
+            >
+
+
+
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+
+
+            >
+
+
+
+            <RadioButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/circulo"
+                android:textSize="20sp"
+                android:onClick="mostrarcirculo"
+                />
+
+            <RadioButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cuadro"
+                android:textSize="20sp"
+                android:onClick="mostrarcuadrado"
+                />
+
+            <RadioButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rectangulo"
+                android:textSize="20sp"
+                android:onClick="mostrarrectangulo"
+                />
+
+            <RadioButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/triangulo"
+                android:textSize="20sp"
+                android:onClick="mostrartriguanlo"
+
+                />
+
+        </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="600"
+            android:gravity="center|top"
+            >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="150sp"
+                android:id="@+id/imagen"
+                android:src="@drawable/medida"
+                android:background="@color/white"
+
+                />
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="6dp"
+        android:background="#c62339ff"
+        >
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menucirculo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:background="@color/whitesmoke"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:gravity="center"
+
+
+        >
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/radiocirculo"
+            android:hint="@string/radio"
+            android:gravity="center"
+            android:textSize="22sp"
+
+
+
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calcular"
+            android:id="@+id/calcularcirculo"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:onClick="areacirculo"
+
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menucuadrado"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:background="@color/whitesmoke"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:gravity="center"
+        >
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/ladocuadro"
+            android:hint="@string/ladocua"
+            android:gravity="center"
+            android:textSize="22sp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calcular"
+            android:id="@+id/calcularcuadrado"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:onClick="areacuadrado"
+
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/menurectangulo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:background="@color/whitesmoke"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:gravity="center"
+        >
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/ladoarec"
+            android:hint="@string/ladoarec"
+            android:gravity="center"
+            android:textSize="22sp"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/ladobrec"
+            android:hint="@string/ladobrec"
+            android:gravity="center"
+            android:textSize="22sp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calcular"
+            android:id="@+id/calcularrectangulo"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:onClick="arearectangulo"
+
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/menutriangulo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:background="@color/whitesmoke"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:gravity="center"
+        >
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/alturatri"
+            android:hint="@string/alturatri"
+            android:gravity="center"
+            android:textSize="22sp"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/basetri"
+            android:hint="@string/basetri"
+            android:gravity="center"
+            android:textSize="22sp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calcular"
+            android:id="@+id/calculartriangulo"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:onClick="areatriangulo"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:background="#c62339ff"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:text="Resultado"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            android:textColor="#252525"
+            android:id="@+id/resultados"
+            />
+
+        <TextView
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            android:textColor="#252525"
+            android:id="@+id/resultado"
+            />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

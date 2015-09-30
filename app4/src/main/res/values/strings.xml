@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">app4</string>
+    <string name="action_settings">action_settings</string>
+
+    <string name="app">AREA</string>
+    <string name="circulo">Circulo</string>
+    <string name="cuadro">Cuadrado</string>
+    <string name="rectangulo">Rectangulo</string>
+    <string name="triangulo">Triangulo</string>
+    <string name="radio">Radio r</string>
+    <string name="calcular">Calcular</string>
+    <string name="ladocua">Lado a</string>
+    <string name="ladoarec">Lado a</string>
+    <string name="ladobrec">Lado b</string>
+    <string name="alturatri">Altura a</string>
+    <string name="basetri">Base b</string>
+
+</resources>

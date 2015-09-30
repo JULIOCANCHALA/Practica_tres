@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">app3</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title">Nota Final</string>
+    <string name="quices">Quices:</string>
+    <string name="exposiciones">Exposiciones:</string>
+    <string name="practicas">Practicas de Lab:</string>
+    <string name="proyecto">Proyecto Final:</string>
+    <string name="p15">15%</string>
+    <string name="p10">10%</string>
+    <string name="p40">40%</string>
+    <string name="p35">35%</string>
+    <string name="resultado">100%</string>
+
+</resources>
